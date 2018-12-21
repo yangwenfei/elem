@@ -1,0 +1,29 @@
+.app-router-view {
+  width: 100%;
+  height: 100%;
+
+  .app-box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .home-side-nav {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 176px;
+      height: 100%;
+      background: gray;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+
+    .home-contain-box {
+      margin-left: 188px;
+      ;
+      height: 100%;
+      background: #eee;
+      border: 1px solid #ddd;
+    }
+  }
+}
