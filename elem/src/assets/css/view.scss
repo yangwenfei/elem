@@ -1,13 +1,3 @@
-.contaner {
-  height: 100%;
-  position: relative;
-}
-
-.page-box.home-view {
-  height: 100%;
-  position: relative;
-}
-
 .app-router-view {
   width: 100%;
   height: 100%;
@@ -32,26 +22,104 @@
     .home-contain-box {
       margin-left: 188px;
       height: 100%;
-      overflow: hidden;
       background: #eee;
       border: 1px solid #ddd;
     }
   }
 }
 
-.page-workbar {
-  height: 30px;
-  line-height: 30px;
-  background: #e5e5e5;
-}
+
 
 .tags-box {
+  position: absolute;
   height: 30px;
   line-height: 30px;
 }
 
-.page-contant {
-  width: 100%;
+.contaner {
+  padding-top: 30px;
   height: 100%;
   position: relative;
+  overflow: hidden;
+
+  .page-box.home-view {
+    height: 100%;
+    position: relative;
+
+    .toolbar-box {
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      box-sizing: border-box;
+      height: 30px;
+      line-height: 30px;
+      background: #e5e5e5;
+    }
+
+    .page-contant {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      padding-top: 30px;
+    }
+
+    .add-box {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      width: 100%;
+      height: 100%;
+      padding: 60px 0 50px 0;
+      background: #fff;
+
+      .add-title {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 30px;
+        padding-left: 20px;
+        line-height: 30px;
+
+        span {
+          position: absolute;
+          right: 22px;
+          top: -2px;
+          color: #333;
+          cursor: pointer;
+        }
+      }
+
+      .add-status-bar {
+        position: absolute;
+        top: 30px;
+        width: 100%;
+        height: 30px;
+        display: flex;
+        padding-left: 20px;
+        line-height: 30px;
+        background-color: #ddecfa;
+
+        span {
+          flex: 1
+        }
+      }
+
+      .add-tab-contant {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #1890ff;
+      }
+
+      .add-bottom {
+        width: 100%;
+        box-sizing: border-box;
+        padding-right: 12px;
+        background-color: #ddecfa;
+        line-height: 50px;
+        text-align: right;
+      }
+    }
+  }
 }

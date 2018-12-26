@@ -1,7 +1,8 @@
 const nav = {
   state: {
-    menuList: [],
-    tabsMenuList: []
+    menuList: [], //左侧导航菜单
+    tabsMenuList: [], //导航菜单对应的所有tabs菜单
+    tabsList: [] //当前打开的tabs菜单
   },
   mutations: {
     SETMENU(state, payload) {
@@ -24,6 +25,9 @@ const nav = {
       }
       tabsArr(payload)
       state.tabsMenuList = flag
+    },
+    SETTABSLIST(state, payload) {
+      state.tabsList = payload
     }
   },
   actions: {}

@@ -32,6 +32,7 @@ export default {
         this.tabsList.push(activeNav);
       }
       this.activTab = activeNav.name;
+      this.catchArr(this.tabsList)
     },
     removeTab (targetName) {
       let tabs = this.tabsList;
@@ -48,6 +49,7 @@ export default {
       }
       this.activTab = activeName;
       this.tabsList = tabs.filter(tab => tab.name !== targetName);
+      this.catchArr(this.tabsList)
       if (this.tabsList.length > 0) {
         this.jump()
       } else {
@@ -64,6 +66,13 @@ export default {
         }
       })
       this.$emit("selected", activeItem)
+    },
+    catchArr (tabsList) {//设置keep-alive需要缓存的数组
+      let nameArr = []
+      tabsList.forEach(el => {
+        nameArr.push(el.name)
+      })
+      this.$store.commit("SETTABSLIST", nameArr)
     }
   },
   mounted () {

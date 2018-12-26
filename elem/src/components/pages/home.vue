@@ -5,7 +5,7 @@
       <div class="home-contain-box">
         <tabs-nav ref="tabsNav" @selected="selectedNav"></tabs-nav>
         <div class="contaner">
-          <keep-alive>
+          <keep-alive :include="include">
             <router-view class='home-view'></router-view>
           </keep-alive>
         </div>
@@ -21,6 +21,11 @@ export default {
   data () {
     return {
       activeIndex: ""
+    }
+  },
+  computed: {
+    include () {
+      return this.$store.state.nav.tabsList
     }
   },
   components: {
