@@ -1,3 +1,5 @@
+开始一个新vue项目基础的架构搭建步骤：环境搭建、动态路由配置、css样式初配置、store状态管理配置、请求配置
+
 #搭建环境#
 ###vue 安装部署 ###
 - npm install vue-cli -g
@@ -253,6 +255,9 @@
 		- zoomRight
 		- zoomUp
 
+
+#axios请求配置#
+	
 
 
 
