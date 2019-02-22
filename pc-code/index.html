@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link href="/lib/3rd/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/lib/common/cloudt/1.0.0/css/cloudt.css" rel="stylesheet">
+  <title>供应商管理</title>
+  <style>
+    .navbar-left {
+      display: none
+    }
+
+    .ct-page-body .ct-page-navbar {
+      display: none
+    }
+
+    .navbar-right.help {
+      display: none
+    }
+
+    .dropdown-menu li:first-child {
+      display: none
+    }
+
+    .dropdown-menu .link-change-product {
+      display: none
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- <div id="app"></div> -->
+  <div class='ct-page-header'></div>
+  <div class='ct-page-body control-setting-body' style="z-index: auto;display:block;top:-15px">
+    <div class='ct-page-navbar'></div>
+    <div class='ct-view-body border-layout' style="z-index:7;height: initial;">
+      <div id="app"></div>
+    </div>
+  </div>
+</body>
+<script>
+  var url = window.location.href
+  if (url.indexOf('http://localhost') > -1 && url.indexOf('10443') == -1) {
+    var oPage = document.getElementsByClassName('ct-page-body')
+    var oView = document.getElementsByClassName('ct-view-body')
+    oPage[0].style.height = '100%'
+    oView[0].style.height = '100%'
+  }
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.0.4/less.js"></script>
+<script src="/lib/3rd/arttemplate/3.0.0/template.js"></script>
+<script src="/lib/3rd/seajs/3.0.1/sea.js"></script>
+<script src="/lib/3rd/jquery/1.11.3/jquery-1.11.3.js"></script>
+<script src="/lib/3rd/jquery/1.11.3/cookie.js"></script>
+<script src="/lib/3rd/bootstrap/3.3.4/js/bootstrap.js"></script>
+<script src="./static/pc/sparrow-all.js"></script>
+<script src="./static/pc/page-frame.js"></script>
+<script src="./static/pc/main.js"></script>
+<script>
+  seajs.use('main');
+
+</script>
+
+</html>

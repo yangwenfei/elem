@@ -1,0 +1,57 @@
+.el-menu-item.is-active {
+  color: #f98601;
+}
+
+.el-menu-item:hover,
+.el-menu-item:focus {
+  background: #eee !important;
+  color: #f98601;
+}
+
+.page-query {
+  .el-form-item {
+    margin: 12px 0;
+  }
+
+  .el-button {
+    margin-left: 85px;
+    width: 80px;
+    height: 34px;
+  }
+}
+
+.el-table th>.cell {
+  text-align: center
+}
+
+.el-table td {
+  text-align: center
+}
+
+.el-table {
+  border-color: #ccc;
+}
+
+.el-table td,
+.el-table th.is-leaf {
+  border-color: #ccc;
+}
+
+.el-table--border td,
+.el-table--border th,
+.el-table__body-wrapper .el-table--border.is-scrolling-left~.el-table__fixed {
+  border-color: #ccc;
+}
+
+.el-table--border {
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.el-input--prefix .el-input__inner {
+  font-weight: normal
+}
+
+.el-form-item__label {
+  font-weight: normal
+}
